@@ -1,0 +1,171 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+}
+
+
+a [href] {
+    color: #000;
+}
+
+.container{
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar{
+    padding-top: 50px;
+    padding-bottom: 10px;
+    .container{
+        display: flex;
+        align-items: center;
+    }
+    .logo{
+        font-size: 40px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        font-weight: 600;
+        text-decoration: none;
+        color: #24f03f;
+    }
+    .nav-links{
+        display: flex;
+        margin-left:auto;
+        list-style: none;
+        
+        .nav-item {
+            position: relative;
+            display: inline-block;
+            margin-left: 20px;
+            margin-right: 20px;
+            text-decoration: none;
+            color: #000;
+            transition: opacity .3s;
+
+            &.active{
+                font-weight: 700;
+                &:after{
+                    content: '';
+                    position: absolute;
+                    bottom: -10px;
+                    left: 10px;
+                    width: 30px;
+                    height: 2px;
+                    background-color: #5ee8e8;
+                    
+                }
+            }
+            &:hover{
+                opacity: .5;
+            }
+
+        }
+
+    }
+}
+    .hero{
+        padding-top: 100px;
+        padding-bottom: 100px;
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        .text-wrapper{
+            width: 50%;
+            color: #000;
+
+            &.w-full{
+                width: 100%;
+            }
+            
+            .title{
+                font-size: 50px;
+                margin-top: 0px;
+                margin-left: 10px;
+             }
+             .description{
+                font-size: 25px;
+                line-height: 40px;
+             }
+             .cta{
+                display: inline-block;
+                padding: 15px 45px;
+                margin-top: 20px;
+                text-decoration: none;
+                background-color: #9ce85e;
+                color: white;
+                border-radius: 10px;
+                transition: transform .5s;
+                
+                &:hover{
+                    transform: scale(1.1);
+                }
+             }
+        }
+            .image-wrapper{
+                width: 50%;
+                text-align: right;
+                margin-top: -100px;
+                margin-left: 200px;
+                size: 60px;
+            }
+
+            .profile-image{
+                width: 90%;
+                text-align: left;
+                margin-top: -780px;
+                margin-left: 600px;
+                size: 60px;
+            }
+        }
+    
+        .portfolio-wrapper{
+            display: flex;
+            margin-left: -15px;
+            margin-right: -15px;
+
+            .portfolio-item{
+                width: 50%;
+                padding-left: 15px;
+                padding-right: 15px;
+                text-align: center;
+
+                .portfolio-image{
+                    max-width: 100%;
+                }
+
+                .portfolio-name{
+                    font-size: 20px;
+                    margin-top: 10px;
+                    margin-bottom: 10px;
+                    text-transform: capitalize;
+
+                }
+                
+                .portfolio-category{
+                    color: #999;
+                }
+            }
+        }
+        .contact-links{
+            padding: 0;
+            padding-left: 15px;
+            margin-top: -10px;
+            list-style: square;
+
+            .contact-item{
+                padding-top: 10px;
+                padding-bottom: 10px;
+
+            }
+        }
+    .style-text{
+        margin-top: 0;
+        display: inline-block;
+        padding: 15px 45px;
+        text-decoration: none;
+        color: #000;
+    }
